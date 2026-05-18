@@ -4,7 +4,7 @@
 SPEC.md v1_0 を必ず参照。各タスクで commit。
 
 ## Phase 1: プロジェクト初期化
-- [ ] T001: Next.js 14 + TypeScript + Tailwindで初期化 (npx create-next-app, App Router使用)
+- [x] T001: Next.js 14 + TypeScript + Tailwindで初期化 (npx create-next-app, App Router使用)
 - [ ] T002: shadcn/ui 初期化
 - [ ] T003: .env.local.example作成、必要な環境変数を全部記載
 - [ ] T004: README.md作成、セットアップ手順を書く
