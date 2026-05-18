@@ -7,6 +7,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.tsbuildinfo
+logs/
+run_codex.log
 .DS_Store
 .env.local
 .env*.local

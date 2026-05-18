@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+
+import { defaultMetadata } from "@/lib/seo";
+
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Kosodate Bot",
-  description: "保護者・支援者向け週次AI相談ボット"
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children

@@ -2,12 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light;
-}
+@layer base {
+  :root {
+    color-scheme: light;
+    --background: 44 40% 97%;
+    --foreground: 140 18% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 18% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 18% 11%;
+    --primary: 170 58% 28%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 36 43% 93%;
+    --secondary-foreground: 140 18% 11%;
+    --muted: 42 30% 92%;
+    --muted-foreground: 156 9% 39%;
+    --accent: 26 90% 84%;
+    --accent-foreground: 140 18% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 38 23% 86%;
+    --input: 38 23% 86%;
+    --ring: 170 58% 28%;
+    --radius: 0.5rem;
+  }
 
-* {
-  box-sizing: border-box;
+  .dark {
+    --background: 140 18% 11%;
+    --foreground: 105 26% 97%;
+    --card: 140 18% 11%;
+    --card-foreground: 105 26% 97%;
+    --popover: 140 18% 11%;
+    --popover-foreground: 105 26% 97%;
+    --primary: 170 45% 48%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 154 15% 18%;
+    --secondary-foreground: 105 26% 97%;
+    --muted: 154 15% 18%;
+    --muted-foreground: 40 15% 72%;
+    --accent: 26 55% 38%;
+    --accent-foreground: 105 26% 97%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 154 14% 22%;
+    --input: 154 14% 22%;
+    --ring: 170 45% 48%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 html,
@@ -17,8 +66,6 @@ body {
 
 body {
   margin: 0;
-  background: #f8faf7;
-  color: #17211b;
   font-family:
     ui-sans-serif,
     system-ui,
