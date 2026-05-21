@@ -13,3 +13,4 @@ run_codex.log
 .DS_Store
 .env.local
 .env*.local
+.vercel

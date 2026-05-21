@@ -11,6 +11,9 @@ import {
 } from "@/lib/consultations";
 import { createPageMetadata } from "@/lib/seo";
 
+export const dynamic = 'force-dynamic';
+
+
 export const metadata: Metadata = createPageMetadata({
   title: "相談履歴",
   description:

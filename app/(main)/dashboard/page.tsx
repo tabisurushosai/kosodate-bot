@@ -25,6 +25,9 @@ import {
 } from "@/lib/weekly-hints";
 import { createPageMetadata } from "@/lib/seo";
 
+export const dynamic = 'force-dynamic';
+
+
 export const metadata: Metadata = createPageMetadata({
   title: "ダッシュボード",
   description:

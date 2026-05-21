@@ -2,6 +2,9 @@ import { ChatClient } from "./chat-client";
 import { createPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
+export const dynamic = 'force-dynamic';
+
+
 export const metadata: Metadata = createPageMetadata({
   title: "AI相談",
   description:

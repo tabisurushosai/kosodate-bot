@@ -50,12 +50,14 @@ export const getClaudeClient = () => {
   return anthropicClient;
 };
 
-const extractText = (content: Awaited<ReturnType<Anthropic["messages"]["create"]>>["content"]) =>
-  content
-    .filter((block) => block.type === "text")
-    .map((block) => block.text)
+const extractText = (response: any): string => {
+  if (!response || !response.content || !Array.isArray(response.content)) return "";
+  return response.content
+    .filter((block: any) => block && block.type === "text")
+    .map((block: any) => block.text || "")
     .join("\n")
     .trim();
+};
 
 export const createClaudeResponse = async ({
   messages,

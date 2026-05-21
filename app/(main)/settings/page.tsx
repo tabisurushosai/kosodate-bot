@@ -22,6 +22,9 @@ import { createPageMetadata } from "@/lib/seo";
 import { LogoutButton } from "./logout-button";
 import { PlanSwitcher } from "./plan-switcher";
 
+export const dynamic = 'force-dynamic';
+
+
 export const metadata: Metadata = createPageMetadata({
   title: "設定",
   description:
